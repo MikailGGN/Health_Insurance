@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+      android:paddingLeft="16dp"
+   android:paddingRight="16dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    >
+    <LinearLayout
+        android:orientation="vertical"
+        android:minWidth="25px"
+        android:minHeight="25px"
+         android:layout_marginTop="16dp"
+        android:background="@drawable/bg_choco_banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:paddingBottom="30dp"
+         android:paddingLeft="16dp"
+         android:paddingRight="16dp"
+        tools:showIn="@layout/app_bar_main"
+        android:id="@+id/linearLayout1">
+         <TextView
+            android:text="Last Diagnosis and Prescription"
+             android:textAppearance="?android:attr/textAppearanceLargePopupMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            
+            /> 
+            <Space
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+          />
+         
+          <TextView
+            android:text="Diagnosis"
+             android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            
+            />
+
+        <TextView
+            android:text="hshss"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_dgs"
+            android:textColor="#fffff3"
+              android:lines="8" 
+    android:minLines="6"  
+            android:gravity="top|left"
+    android:maxLines="10" />
+
+        <TextView
+            android:text="Prescription"
+             android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_prstn"
+            android:textColor="#fffff3"
+              android:lines="8" 
+    android:minLines="6"  
+            android:gravity="top|left"
+    android:maxLines="10" />
+
+         <TextView
+            android:text="Date of Appointment"
+             android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:text=""
+            android:textColor="#fffff3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_doa"
+           
+            />
+        
+            <TextView
+            android:text="Doctor(Specialist)"
+             android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#fffff3"
+            android:id="@+id/textView_dctr" 
+               android:textAppearance="?android:attr/textAppearanceMedium"
+    android:minLines="3"  
+            android:gravity="top|left"
+    android:maxLines="5" 
+            />
+         
+          
+        <Button
+            android:text="Pharmacy"
+            android:layout_width="match_parent"
+            android:layout_height="190px"
+             android:drawableLeft="@drawable/ic_action_pharmacy"
+                android:paddingLeft="20dp"
+                         android:textColor="#F1F1F1"
+                android:letterSpacing="0.6"
+               style="@style/Widget.AppCompat.Button.Colored" 
+    android:textSize="20sp"
+                android:textAlignment="textStart"
+                 android:drawablePadding="30dp"
+            android:id="@+id/button_phs" />
+       
+    <Button
+            android:text="Prescription History"
+            android:layout_width="match_parent"
+            android:layout_height="190px"
+            android:paddingLeft="30dp"
+           android:textColor="#F1F1F1"
+            android:gravity="center"
+              android:letterSpacing="0.3"
+               style="@style/Widget.AppCompat.Button.Colored" 
+    android:textSize="14sp"
+                android:textAlignment="textStart"
+                 android:drawablePadding="30dp"
+            android:id="@+id/button_phs2" />
+   
+    
+
+       </LinearLayout>
+  
+
+</RelativeLayout>

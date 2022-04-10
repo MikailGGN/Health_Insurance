@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="false">
+   <LinearLayout
+      android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+          app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:showIn="@layout/app_bar_main" 
+         android:paddingRight="15dp" 
+            android:paddingLeft="15dp">
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="200px"/>
+      <LinearLayout
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:background="@drawable/bg_banner_2"
+        android:layout_height="400.0px"
+     
+        android:orientation="vertical">
+       <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+                android:textColor="#fffff3"
+                android:id="@+id/txtservicepaymt1" 
+        android:text="     You have" />
+
+        <TextView
+        android:text="8,000 NGN"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="200px"
+        android:id="@+id/txtservicepaymt2" 
+            android:marqueeRepeatLimit="marquee_forever"
+        android:padding="50px"
+        android:textSize="35dp"
+      android:textColor="#fffff3"
+        android:layout_centerHorizontal="true"
+                android:textAlignment="center"/>
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+                android:textColor="#fffff3"
+                android:id="@+id/txtservicepaymt3" 
+        android:text="credit on your airtel Health Plan" 
+                android:textAlignment="center"/>
+</LinearLayout>
+             <TextView
+            android:text="Choose Payment Type"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+         <!--   <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinnerPay" />
+
+        <TextView
+            android:text="Amount"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextPayAmt" />  
+        -->
+
+             <Button
+            android:text="Pay"
+                style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="200px" android:textSize="20sp"
+            android:id="@+id/btnpay" />
+          
+            
+
+</LinearLayout>
+</ScrollView>

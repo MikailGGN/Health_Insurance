@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+      app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:fillViewport="false">
+    <LinearLayout
+      android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        
+        tools:showIn="@layout/app_bar_main">
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+          />
+
+ <LinearLayout
+      android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+          android:paddingRight="15dp" 
+            android:paddingLeft="15dp"
+            >
+
+        <TextView
+            android:text="Schedule a Doctor"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+           
+           
+
+          
+            <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+          android:textAppearance="?android:attr/textAppearanceMedium"
+        android:paddingTop="5dp"
+         android:textColor="#3466AA"
+        android:text="State" /> 
+            <Spinner
+        android:layout_width="match_parent"
+         android:layout_height="200px"
+        android:paddingLeft="20dp"
+                android:prompt="?android:attr/actionDropDownStyle"
+               android:focusedByDefault="true"
+           style="@style/SpinnerLook"
+                android:background="@drawable/bg_rasberry_banner"
+                        android:spinnerMode="dropdown"
+                           android:dropDownSelector="#F1f1f1"
+            android:paddingBottom="10dp"
+            android:popupBackground="#3466AA"
+          android:elevation="2dp"
+           android:backgroundTintMode="src_in"
+         android:id="@+id/sp1" 
+            />  
+        <!--  style="@style/spinner_style"-->
+           <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+          android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#3466AA"
+        android:paddingTop="5dp"
+        
+        android:text="Local Goverment Area" /> 
+           <Spinner
+        android:layout_width="match_parent"
+         android:layout_height="200px"
+        android:paddingLeft="20dp"
+      android:prompt="?android:attr/actionDropDownStyle"
+                       style="@style/SpinnerLook"
+                 android:background="@drawable/bg_rasberry_banner1"
+                        android:spinnerMode="dropdown"
+                           android:dropDownSelector="#f1f1f1"
+              android:popupBackground="#3466AA"
+          android:elevation="2dp"
+           android:backgroundTintMode="src_in"
+         android:id="@+id/spL" 
+            /> 
+              
+             <TextView
+            android:text="Date of Appointment"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"   />
+             <TextView
+                 android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="22dp"
+               android:id="@+id/date_display" />
+             <Button
+                android:text="Select Date"
+                android:layout_width="match_parent"
+                 android:textColor="#F1F1F1"
+                android:letterSpacing="0.6"
+                android:background="@drawable/btnblue"
+                android:layout_height="190px"
+                android:id="@+id/date_select_button" />
+
+          <TextView
+            android:text="Time of Appointment"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"   />
+            <TextView
+        android:id="@+id/time_display"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:paddingTop="22dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+          android:textSize="24dp" />
+             <Button
+        android:id="@+id/select_button"
+               android:textColor="#F1F1F1"
+                android:letterSpacing="0.6"
+                android:background="@drawable/btnblue"
+                android:layout_height="190px"
+       android:layout_width="match_parent"
+       android:text="PICK TIME"/>
+    
+
+           <TextView
+            android:text="Available Doctors"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+      
+        
+             <GridView
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="900px"
+            android:id="@+id/gridViewDoctor" 
+             android:numColumns="1"
+            android:padding="4dp"
+          android:backgroundTintMode="src_in"
+            android:horizontalSpacing="5dp"
+        android:verticalSpacing="5dp"
+       android:fastScrollEnabled="true"
+        />
+       
+  <ProgressBar android:id="@+id/circularProgressbar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent" android:layout_height="250dp"
+                android:indeterminate="false" android:max="100" android:progress="50"
+                android:layout_centerInParent="true"
+        android:gravity="center"
+                android:progressDrawable="@drawable/circlebardesign" 
+                android:secondaryProgress="100" />
+ <TextView android:id="@+id/tv" android:layout_width="250dp" 
+                android:layout_height="250dp" android:gravity="center" 
+                android:text="25%" android:layout_centerInParent="true" 
+                android:textSize="20sp" android:visibility="gone" />
+    
+
+        
+        
+
+</LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

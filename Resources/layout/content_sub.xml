@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+ 
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/app_bar_sub"
+    android:paddingLeft="16dp"
+         android:paddingRight="16dp">
+    <LinearLayout
+        android:orientation="vertical"
+        android:minWidth="25px"
+        android:minHeight="25px"
+           android:layout_marginTop="16dp"
+         android:background="@drawable/bg_choco_banner"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+           android:paddingBottom="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout1" >
+        <TextView
+            android:text="Subcriptions"
+             android:textAppearance="?android:attr/textAppearanceLargePopupMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            
+            /> 
+         <Space
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+          />
+
+    <TextView
+        android:text="Subscription Title"
+              android:layout_width="match_parent"
+        android:layout_height="match_parent"
+              android:textAppearance="?android:attr/textAppearanceMedium"
+      android:paddingBottom="20dp"/>
+    <TextView
+        android:text="Plantinum : Weekly"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtsubscription1" 
+        android:padding="50px"
+            android:paddingBottom="20dp"/>
+         <TextView
+        android:text="Subscription Provider"
+              android:layout_width="match_parent"
+        android:layout_height="match_parent"
+              android:textAppearance="?android:attr/textAppearanceMedium"
+      android:paddingBottom="20dp"/>
+    
+        <TextView
+        android:text="Avon"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="300px"
+        android:id="@+id/txtsubscription2" 
+        android:padding="50px"
+            android:paddingBottom="20dp"/>
+        <TextView
+        android:text="Options"
+              android:layout_width="match_parent"
+        android:layout_height="match_parent"
+              android:textAppearance="?android:attr/textAppearanceMedium"
+      android:paddingBottom="20dp"/>
+    
+    <Button
+            android:layout_marginTop="6dp"
+        android:text="Health Care Provider"
+        android:layout_width="match_parent"
+        android:layout_height="200px"
+        android:id="@+id/button_sub_hcp" 
+        android:textColor="#F1F1F1"
+                android:letterSpacing="0.1"
+               style="@style/Widget.AppCompat.Button.Colored"
+                android:drawableLeft="@drawable/ic_action_provider"
+                android:paddingLeft="15dp"
+                 android:textSize="20sp"
+                android:textAlignment="textStart"
+                 android:drawablePadding="30dp"/>
+    <Button
+            android:layout_marginTop="6dp"
+        android:text="Payment"
+        android:layout_width="match_parent"
+        android:layout_height="200px"
+        android:id="@+id/button_sub_py" 
+        android:textColor="#F1F1F1"
+                android:letterSpacing="0.6"
+               style="@style/Widget.AppCompat.Button.Colored"
+            android:drawableLeft="@drawable/ic_action_paymt"
+                android:paddingLeft="15dp"
+    android:textSize="20sp"
+                android:textAlignment="textStart"
+                 android:drawablePadding="30dp"
+            />
+  
+   </LinearLayout>
+</LinearLayout>

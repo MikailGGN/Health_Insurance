@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name"></string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+  <!--
+  <string name="firebase_database_url">+https://wecare-1-cb6c2-default-rtdb.firebaseio.com</string>
+-->  </resources>

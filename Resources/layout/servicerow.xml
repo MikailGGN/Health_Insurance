@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:orientation="horizontal"  
+    android:layout_width="fill_parent"  
+    android:layout_height="fill_parent"  
+    android:minWidth="25px"  
+    android:minHeight="25px"  
+    android:background="#3498db"
+    android:paddingBottom="4dp">  
+  <!--  <ImageView  
+        android:id="@+id/photoImageView"  
+        android:layout_width="60dp"  
+        android:layout_height="60dp"  
+        android:layout_alignParentLeft="true"  
+        android:layout_centerVertical="true"  
+        android:padding="5dp" /> --> 
+    <TextView  
+        android:id="@+id/nameTextView"  
+         android:textColor="#fff"
+        android:text="Name"  
+        android:textAppearance="?android:attr/textAppearanceLarge"  
+        android:layout_width="wrap_content"  
+                android:layout_height="wrap_content"  
+        android:paddingLeft="5dp" />  
+    <TextView  
+        android:id="@+id/addressTextView"  
+    android:textColor="#fff"
+        android:layout_below="@id/nameTextView"  
+        android:text="Address"  
+        android:textAppearance="?android:attr/textAppearanceSmall"  
+        android:layout_width="wrap_content"  
+        android:layout_height="wrap_content"  
+        android:paddingLeft="5dp" />  
+    <TextView  
+        android:id="@+id/contactTextView"  
+        android:text="contact"  
+        android:textAppearance="?android:attr/textAppearanceSmall"  
+        android:layout_width="wrap_content"  
+        android:layout_height="wrap_content"  
+        android:layout_below="@id/addressTextView"  
+        android:textColor="#fff"
+        android:paddingLeft="5dp" />  
+      
+    <TextView  
+        android:id="@+id/contactdesTextView"  
+       android:textColor="#fff"
+        android:layout_below="@id/contactTextView"  
+        android:text="Designation"  
+        android:textAppearance="?android:attr/textAppearanceSmall"  
+        android:layout_width="wrap_content"  
+        android:layout_height="wrap_content"  
+        android:paddingLeft="5dp" />  
+    <TextView  
+        android:id="@+id/contactemailTextView"  
+        android:layout_toRightOf="@id/contactTextView"  
+        android:layout_below="@id/contactdesTextView"  
+        android:text="email"  
+        android:textAppearance="?android:attr/textAppearanceSmall"  
+        android:layout_width="wrap_content"  
+        android:layout_height="wrap_content"  
+        android:textColor="#fff"
+        android:paddingLeft="5dp" />  
+    <TextView  
+        android:id="@+id/contactphoneTextView"  
+        android:layout_toRightOf="@id/contactemailTextView"  
+        android:layout_below="@id/contactdesTextView"  
+        android:text="Phone"  
+        android:textColor="#fff"
+        android:textAppearance="?android:attr/textAppearanceSmall"  
+        android:layout_width="wrap_content"  
+        android:layout_height="wrap_content"  
+        android:paddingLeft="5dp" />
+      <TextView  
+        android:id="@+id/stateTextView"  
+       android:textColor="#fff"
+        android:layout_below="@id/contactTextView"  
+        android:text="Designation"  
+        android:textAppearance="?android:attr/textAppearanceSmall"  
+        android:layout_width="wrap_content"  
+        android:layout_height="wrap_content"  
+        android:paddingLeft="5dp" />
+</RelativeLayout>   

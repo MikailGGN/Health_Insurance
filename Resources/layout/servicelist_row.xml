@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:orientation="horizontal"  
+    android:layout_width="fill_parent"  
+    android:layout_height="fill_parent"  
+    android:minWidth="25px"  
+    android:minHeight="25px"  
+    android:background="#3498db"
+    android:paddingBottom="4dp">  
+   
+<LinearLayout android:id="@+id/Text"
+       android:orientation="vertical"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:paddingLeft="10dip">
+
+     <TextView  
+        android:id="@+id/nameTextView"  
+         android:textColor="#fff"
+             android:layout_marginRight="20dp"
+       android:text="Name"  
+        android:textAppearance="?android:attr/textAppearanceMedium"  
+        android:layout_width="wrap_content"  
+        android:layout_height="wrap_content"  
+        android:paddingLeft="20dp" />
+
+    <TextView
+        android:id="@+id/costTextView"
+        android:textColor="#fff"
+        android:layout_marginLeft="20dp"
+        android:text="Cost"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:layout_marginBottom="9.0dp" /> 
+       
+   </LinearLayout>
+ <CheckBox
+        android:id="@+id/checkBoxCost"
+android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="1.0dp"
+       
+        />
+</RelativeLayout>   

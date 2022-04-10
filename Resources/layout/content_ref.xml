@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+      app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:fillViewport="false">
+    <LinearLayout
+      android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        
+        tools:showIn="@layout/app_bar_main">
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="200px"
+          />
+
+ <LinearLayout
+      android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+          android:paddingRight="15dp" 
+            android:paddingLeft="15dp"
+            >
+
+        <TextView
+            android:text="Firstname"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+       />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextFirstName" />
+
+        <TextView
+            android:text="Lastname"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+        />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editLasttName" />
+        <TextView
+            android:text="Date of Birth"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+        />
+            <TextView
+                
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/date_display" />
+
+
+
+            <Button
+                android:text="Select Date"
+                android:layout_width="match_parent"
+                 android:textColor="#F1F1F1"
+                android:letterSpacing="0.6"
+                android:background="@drawable/btnblue"
+                android:layout_height="190px"
+                android:id="@+id/date_select_button" />
+       
+
+        <TextView
+            android:text="Sex"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+        />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editSex" />
+
+        <TextView
+            android:text="Height"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+        />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editHeight" />
+        <TextView
+            android:text="Weight"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+        />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editWeight" />
+        <Button
+            android:text="Submit"
+                style="@style/Widget.AppCompat.Button.Colored"
+                 android:textColor="#F1F1F1"
+                android:letterSpacing="0.6"
+                android:background="@drawable/btnblue"
+            android:layout_width="match_parent"
+            android:layout_height="200px"  
+                android:drawableLeft="@drawable/ic_action_pharmacy"
+                android:paddingLeft="20dp"
+    android:textSize="20sp"
+                android:textAlignment="textStart"
+                 android:drawablePadding="30dp"
+            android:id="@+id/btnsubmit" />
+
+</LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

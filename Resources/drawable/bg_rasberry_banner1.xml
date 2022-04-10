@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+  <!--
+  <solid android:color="#b53d48"/>-->
+  <gradient android:angle="135" android:startColor="#82B7DC"  android:centerColor="#3466AA" android:endColor="#114084"  android:type="linear" />
+  <corners android:topLeftRadius="6dp" android:topRightRadius="6dp"
+     android:bottomLeftRadius="6dp" android:bottomRightRadius="6dp"
+           />
+  <item android:right="5dp">
+    <bitmap android:gravity="center_horizontal|right" android:src="@drawable/ic_chevron_down">
+      <padding android:right="2dp" />
+    </bitmap>
+  </item>
+  <padding android:left="5dp" android:top="10dp" android:right="5dp"
+           android:bottom="5dp" />
+</shape>

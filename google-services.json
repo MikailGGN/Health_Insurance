@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "920083122070",
+    "firebase_url": "https://newrelish-bc4be-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "newrelish-bc4be",
+    "storage_bucket": "newrelish-bc4be.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:920083122070:android:cf35e889ad3b3bcc63bfb7",
+        "android_client_info": {
+          "package_name": "com.companyname.newrelish"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "920083122070-vefedfsotdgf795579041dj33qgetig7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVxdAlL9FORUH_psnhRikJRfmfDFZmcyw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "920083122070-vefedfsotdgf795579041dj33qgetig7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

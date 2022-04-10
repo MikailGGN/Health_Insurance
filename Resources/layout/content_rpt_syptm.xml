@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTintMode="src_in" 
+    android:paddingLeft="2dp"
+    android:paddingTop="30dp"
+    
+    android:layoutAnimation="?android:attr/windowTranslucentNavigation"
+         android:paddingRight="2dp"
+     android:background="@drawable/bgbanner3"
+    android:backgroundTint="#114084">
+        
+    <!--<ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"> -->
+
+    <LinearLayout
+        
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+       android:layout_marginTop="10dip"
+       
+        android:orientation="vertical">
+        
+             <ImageView
+                android:src="@drawable/ic_symptoms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                 android:layout_marginTop="2dip"
+        
+              /> 
+            <Space
+            android:layout_width="match_parent"
+            android:layout_height="10px" />
+              <TextView
+                android:text="Describe your symptoms"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="20px"
+                 />
+        <EditText
+            android:inputType="textMultiLine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+              android:lines="30" 
+    android:minLines="15"  
+            android:gravity="top|left"
+    android:maxLines="50"   
+           
+    android:scrollbars="vertical"
+            android:background="#808080"
+      android:id="@+id/editText_sym" />
+   
+        <TextView
+            android:layout_marginTop="20dp"
+            android:letterSpacing="0.2"
+            android:paddingLeft="10px"
+                android:text="Describe the symptoms as clear as possible or record with the button below"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="20px"
+                 />
+         <Button android:id="@+id/start" android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:text="Start Recording" />  
+         <Button android:id="@+id/stop" android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:enabled="false"
+            android:text="Stop Recording"  />  
+       
+        <Button
+            android:id="@+id/btn_symptom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:letterSpacing="0.2"
+           style="@style/Widget.AppCompat.Button.Colored"
+            android:text="Submit"
+            
+            />
+    </LinearLayout>
+<!--</ScrollView> -->
+    </RelativeLayout>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="false">
+   <LinearLayout
+      android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+          app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:showIn="@layout/app_bar_main" 
+         android:paddingRight="15dp" 
+            android:paddingLeft="15dp">
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="200px"/>
+     <LinearLayout
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:background="@drawable/bg_banner_2"
+        android:layout_height="500.0px" android:orientation="vertical"
+            android:paddingBottom="8dp">
+       
+           <TextView
+            android:text="Selected health packages"
+            android:paddingLeft="10dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+                android:id="@+id/custcost"
+                android:textColor="#F0f0f0" /> 
+
+            <ListView
+                android:id="@+id/listView_added"
+             android:fastScrollEnabled="true"
+            android:layout_width="match_parent"
+                android:textColor="@android:color/white"
+            android:layout_height="250.0px" />
+            
+           
+            <Button
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="160px"
+          android:textSize="21sp"
+          android:text="0,000 NGN"
+         android:id="@+id/button_Cal"
+          android:gravity="right"
+          android:paddingLeft="20dp"
+          android:textAlignment="textEnd" 
+          android:background="#3466AA"
+          style="@style/Widget.AppCompat.Button.Colored" />
+
+ <Space
+            android:layout_width="match_parent"
+            android:layout_height="50px"/>
+</LinearLayout>
+      
+            <TextView
+    android:layout_width="match_parent"
+    android:layout_height="3dp"
+    android:background="#3466AA"
+    android:layout_marginTop="20dp" />
+        
+        <TextView
+            android:text="Choose Healthcare Provider"
+            android:paddingLeft="15px"
+            android:paddingTop="5dp"
+            android:textColor="#6682af"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+                     android:id="@+id/text_Cal" />
+      <!--   <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="200px"
+        android:paddingLeft="20dp"
+        android:textColor="#F1f1f1"
+                      style="@style/SpinnerLook"
+                        android:spinnerMode="dropdown"
+        android:dropDownSelector="#808080"
+            android:paddingBottom="10dp"
+            android:popupBackground="#3466AA"
+          android:elevation="2dp"
+           android:backgroundTintMode="src_in"
+         android:id="@+id/sp_custplan"  />  
+        <Spinner
+            style="@style/Widget.AppCompat.DropDownItem.Spinner"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:pa
+            android:id="@+id/sp_custplan"
+            />-->
+        <Spinner
+    android:id="@+id/sp_custplan"
+    style="@style/spinner_styles" />
+          <Space
+            android:layout_width="match_parent"
+            android:layout_height="50px"/>
+        <TextView
+            android:text="Select packages to customize health plan"
+            android:paddingLeft="10dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+                android:id="@+id/custslt"
+                android:textColor="#6682af" /> 
+
+           <ListView
+            android:id="@+id/listView_cp"
+             android:textColor="#6682af"
+             android:fastScrollEnabled="true"
+            android:layout_width="match_parent"
+            android:layout_height="850.0px" />
+      
+
+        
+       
+
+
+            
+
+</LinearLayout>
+</ScrollView>

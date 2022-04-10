@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+      app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:fillViewport="false">
+    <LinearLayout
+      android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        
+        tools:showIn="@layout/app_bar_main">
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="200px"
+          />
+
+ <LinearLayout
+      android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+          android:paddingRight="15dp" 
+            android:paddingLeft="15dp"
+            >
+
+        <TextView
+            android:text="Firstname"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+       />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextFirstName" />
+
+        <TextView
+            android:text="Lastname"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+        />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editLasttName" />
+        <TextView
+            android:text="Year of MBBS"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+        />
+            <TextView
+                
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/yearmbbs" />
+
+
+
+          
+       
+
+        <TextView
+            android:text="Specialization"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+        />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/specialization" />
+
+        <TextView
+            android:text="MDCN Folio No."
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+        />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/mdcnfolionumber" />
+        <TextView
+            android:text="Mobile number"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+        />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/docnumber" />
+
+            
+            <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+          android:textAppearance="?android:attr/textAppearanceMedium"
+        android:paddingTop="5dp"
+         android:textColor="#3466AA"
+        android:text="State" /> 
+            <Spinner
+        android:layout_width="match_parent"
+         android:layout_height="200px"
+        android:paddingLeft="20dp"
+                android:prompt="?android:attr/actionDropDownStyle"
+               android:focusedByDefault="true"
+           style="@style/SpinnerLook"
+                android:background="@drawable/bg_rasberry_banner"
+                        android:spinnerMode="dropdown"
+                           android:dropDownSelector="#F1f1f1"
+            android:paddingBottom="10dp"
+            android:popupBackground="#3466AA"
+          android:elevation="2dp"
+           android:backgroundTintMode="src_in"
+         android:id="@+id/spdc1" 
+            />  
+        <!--  style="@style/spinner_style"-->
+           <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+          android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#3466AA"
+        android:paddingTop="5dp"
+        
+        android:text="Local Goverment Area" /> 
+           <Spinner
+        android:layout_width="match_parent"
+         android:layout_height="200px"
+        android:paddingLeft="20dp"
+      android:prompt="?android:attr/actionDropDownStyle"
+                       style="@style/SpinnerLook"
+                 android:background="@drawable/bg_rasberry_banner1"
+                        android:spinnerMode="dropdown"
+                           android:dropDownSelector="#f1f1f1"
+              android:popupBackground="#3466AA"
+          android:elevation="2dp"
+           android:backgroundTintMode="src_in"
+         android:id="@+id/spdcL" 
+            /> 
+              
+             <TextView
+            android:text="Date of Appointment"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"   />
+             <TextView
+                 android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/date_display3" />
+             <Button
+                android:text="Select Date"
+                android:layout_width="match_parent"
+                 android:textColor="#F1F1F1"
+                android:letterSpacing="0.6"
+                android:background="@drawable/btnblue"
+                android:layout_height="190px"
+                android:id="@+id/date_select_button3" />
+
+          <TextView
+            android:text="Time of Appointment"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"   />
+            <TextView
+        android:id="@+id/time_display3"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:paddingTop="22dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+          android:textSize="24dp" />
+             <Button
+        android:id="@+id/select_button3"
+               android:textColor="#F1F1F1"
+                android:letterSpacing="0.6"
+                android:background="@drawable/btnblue"
+                android:layout_height="190px"
+       android:layout_width="match_parent"
+       android:text="PICK TIME"/>
+
+        <Button
+            android:text="Submit"
+                style="@style/Widget.AppCompat.Button.Colored"
+                 android:textColor="#F1F1F1"
+                android:letterSpacing="0.6"
+                android:background="@drawable/btnblue"
+            android:layout_width="match_parent"
+            android:layout_height="200px"  
+                android:drawableLeft="@drawable/ic_action_pharmacy"
+                android:paddingLeft="20dp"
+    android:textSize="20sp"
+                android:textAlignment="textStart"
+                 android:drawablePadding="30dp"
+            android:id="@+id/btnsubmit" />
+
+</LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

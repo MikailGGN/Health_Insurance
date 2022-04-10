@@ -1,0 +1,56 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#114084</item>
+        <item name="colorPrimaryDark">#3466AA</item>
+        <item name="colorAccent">#3466AA</item>
+    </style>
+  <style name="sidemenutextdown">
+    <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+    <item name="android:textColor">#114084</item>
+    <item name="android:textSize">16sp</item>
+    <item name="android:letterSpacing">0.05</item>
+  </style>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+  <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+  <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+
+  
+  <style name="SpinnerLook" parent="ThemeOverlay.AppCompat.Light" >
+    <item name="android:textColor">#3466AA</item>
+  <item name="android:textAllCaps">true</item>
+    <item name="android:textSize">20sp</item>    //any size
+    <item name="android:overlapAnchor">true</item>
+  </style>
+  <style name="spinner_style" parent="ThemeOverlay.AppCompat.Light">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:textColor">#3466AA</item>
+    <item name="android:background">@drawable/gradient_spinner</item>
+    <item name="android:layout_margin">1dp</item>
+    <item name="android:paddingLeft">5dp</item>
+    <item name="android:paddingRight">5dp</item>
+    <item name="android:paddingTop">5dp</item>
+    <item name="android:paddingBottom">5dp</item>
+  </style>
+  <style name="spinner_styles">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">68dp</item>
+    <item name="android:background">@drawable/gradient_spinners</item>
+    <item name="android:layout_margin">10dp</item>
+    <item name="android:paddingLeft">8dp</item>
+    <item name="android:paddingRight">20dp</item>
+    <item name="android:paddingTop">5dp</item>
+    <item name="android:paddingBottom">5dp</item>
+    <item name="android:popupBackground">#DFFFFFFF</item>
+  </style>
+ 
+</resources>
